@@ -1,0 +1,34 @@
+node:
+  type: object
+  title: Node
+  description: Nutanix Node properties
+  x-papiea-entity: differ
+  properties:
+    ip:
+      type: string
+      description: Node IPV4 address
+    state:
+      type: string
+      description: Node state, e.g. online/free/...
+      enum: [
+        free,      # Node is clean and un-allocated
+        failed,    # Node in failed state
+        imaging,   # Node is being imaged
+        ready      # Node is imaged and ready for deployment
+      ]
+    status:
+      type: string
+      description: Node status
+      x-papiea: status-only
+      enum: [
+        initial,
+        staging,
+        reboot_to_phoenix,
+        phoenix_up,
+        download_nos,
+        download_hyp,
+        hyp_install,
+        hyp_firstboot,
+        cvm_install,
+        done
+     ]

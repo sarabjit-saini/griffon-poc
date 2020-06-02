@@ -1,0 +1,87 @@
+image_node:
+  type: object
+  title: Image Node
+  description: Imaging Request
+  x-papiea-entity: spec-only
+  required:
+    - hypervisor_ip
+    - hypervisor_netmask
+    - hypervisor_hostname
+    - cvm_ip
+    - cvm_netmask
+    - default_gateway
+  properties:
+    hypervisor:
+      type: string
+      description: Type of hypervisor
+    hypervisor_ip:
+      type: string
+      description: Hypervisor IPv4 address
+    hypervisor_hostname:
+      type: string
+      description: Hypervisor Hostname
+    hypervisor_netmask:
+      type: string
+      description: Hypervisor subnet mask
+    cvm_ip:
+      type: string
+      description: Nutanix Controller VM IPV4 address
+    cvm_netmask:
+      type: string
+      description: CVM IPv4 subnet mask
+    default_gateway:
+      type: string
+      description: Default gateway of Host/CVM network
+    node_position:
+      type: string
+      description: Position of the ndoe in the block.
+    cvm_gb_ram:
+      type: string
+      description: RAM capacity of CVM in GB.
+    cvm_num_vcpus:
+      type: integer
+      description: Number of CVM vcpus.
+    cluster_id:
+      type: string
+      description: ID of cluster.
+    node_serial:
+      type: string
+      description: serial number of the node.
+    current_network_interface:
+      type: string
+      description: CVM current network inteface.
+    current_cvm_vlan_tag:
+      description: Current CVM vlan tag.
+    bond_mode:
+      type: string
+      description: dynamic if using LACP, static for LAG
+    bond_uplinks:
+      type: array
+      description: MAC Addresses of NICs in a team/bond
+      items:
+        type: string
+        description: Mac Address of NIC in a team/bond
+    bond_lacp_rate:
+      type: string
+      description: slow or fast if lacp if being used at the switch
+    rdma_mac_addr:
+      type: string
+      description: mac address of nic to be used for rdma
+    rdma_passthrough:
+      type: boolean
+      description: passthru RDMA nic to CVM if possible, default to false
+    hypervisor_iso:
+      type: object
+      description: Hypervisor ISO
+      properties:
+        url: string
+        md5sum: string
+    nos_package:
+      type: object
+      description: NOS package
+      properties:
+        url: string
+        md5sum: string
+    skip_hypervisor:
+      type: boolean
+      description: If hypervisor installation should be skipped

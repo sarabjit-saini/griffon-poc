@@ -1,0 +1,18 @@
+{
+  "hypervisor": "kvm",
+  "hypervisor_ip": "172.26.1.5",
+  "hypervisor_hostname": "azure-ntnx-01",
+  "hypervisor_netmask": "255.255.255.0",
+  "cvm_ip": "172.26.1.6",
+  "cvm_netmask": "255.255.255.0",
+  "default_gateway": "172.26.1.2",
+  "node_position": "A",
+  "hypervisor_iso": {
+    "url": "http://172.26.2.4:8000/images/AHV-DVD-x86_64-el7.nutanix-azure.20190916.123.iso",
+    "md5sum": "9532695fb1210d4271e801c4411b97c6"
+  },
+  "nos_package": {
+    "url": "http://172.26.2.4:8000/images/nutanix_installer_package-release-euphrates-5.16.1-stable-6fe09723d0b2d9edd8a49afed7d82707b59d5213-goldimage-7.7r1.4-x86_64.tar.gz",
+    "md5sum": "e4d6d32032769094daa725e36d65494c"
+  }
+}

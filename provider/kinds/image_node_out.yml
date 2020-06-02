@@ -1,0 +1,8 @@
+image_node_out:
+  type: object
+  title: Image Node Response
+  description: Imaging Request Response
+  properties:
+    message: string
+    details: string
+    session_id: string
