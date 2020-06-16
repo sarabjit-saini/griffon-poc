@@ -1,4 +1,7 @@
 # griffon-poc
+
+![Griffon](http://filer.dev.eng.nutanix.com:8080/Users/sarabjit.saini/azure/Gypful.jpg)
+
 Griffon provider POC level code
 
 Workflow:
