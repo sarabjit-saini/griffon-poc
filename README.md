@@ -1,6 +1,6 @@
 # griffon-poc
 
-![Griffon](http://filer.dev.eng.nutanix.com:8080/Users/sarabjit.saini/azure/Gypful.jpg)
+![Griffon](https://github.com/sarabjit-saini/griffon-poc/blob/master/Gypful.jpg)
 
 Griffon provider POC level code
 
