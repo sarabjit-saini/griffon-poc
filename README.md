@@ -1,6 +1,8 @@
 # griffon-poc
 
-![Griffon](https://github.com/sarabjit-saini/griffon-poc/blob/master/Gypful.jpg)
+<p align="left">
+  <img src="https://github.com/sarabjit-saini/griffon-poc/blob/master/Gypful.jpg" width="350" title="Griffon">
+</p>
 
 Griffon provider POC level code
 
